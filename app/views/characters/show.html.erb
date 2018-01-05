@@ -1,0 +1,25 @@
+
+
+
+
+<p><%=@I.name%></p>
+<%= image_tag(@I.head_shot)%>
+  <table>
+        <th>Move</th>
+        <th>Input</th>
+
+    <%= @moves.each_with_index do |t, i| %>
+        
+
+    
+  
+        
+        <tr>
+            <td><%=@moves[i].move_name%></td>
+            <td><%= image_tag("Move_Images/#{@I.name}/#{@moves[i].move_name}.PNG")%></td>
+        </tr>
+  
+    
+    <%end%>
+
+  </table>
