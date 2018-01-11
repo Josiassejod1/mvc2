@@ -66,7 +66,7 @@ Dan,Otoko Michi (Level 3)
 Dhalsim,Yoga Fire
 Dhalsim,Yoga Flame
 Dhalsim,Yoga Blast
-Dhalsim, Yoga Smash
+Dhalsim,Yoga Smash
 Dhalsim,Yoga Teleport
 Dhalsim,Yoga Floating
 Dhalsim,Yoga Inferno
@@ -110,16 +110,16 @@ Ken,Forward Roll
 Ken,Shoryu Reppa
 Ken,Shippu Jinraikyaku
 Ken,Shinryuken
-M. Bison,Psycho Shot
-M. Bison,Psycho Field
-M. Bison,Scissors Kick
-M. Bison,Head Stomp
-M. Bison,Skull Diver
-M. Bison,Warp
-M. Bison,Flying
-M. Bison,Psycho Crusher
-M. Bison,Knee Press Nightmare
-M. Bison,Psycho Explosion
+Vega,Psycho Shot
+Vega,Psycho Field
+Vega,Scissors Kick
+Vega,Head Stomp
+Vega,Skull Diver
+Vega,Warp
+Vega,Flying
+Vega,Psycho Crusher
+Vega,Knee Press Nightmare
+Vega,Psycho Explosion
 Mega Man,Mega Buster
 Mega Man,Mega Upper
 Mega Man,Item Use
@@ -158,7 +158,7 @@ Ryu,Shoryuken
 Ryu,Tatsumaki Senpukyaku
 Ryu,Shinku Hadoken
 Ryu,Shinku Tatsumaki Senpukyaku
-Ryu,Shin Shoryuken�(Level 3)
+Ryu,Shin Shoryukenn(Level 3)
 Sakura,Hadoken
 Sakura,Shouo'uken
 Sakura,Shunpukyaku
@@ -172,32 +172,32 @@ Servbot,Supporting Attack
 Servbot,Paper Airplane
 Servbot,Lunch Rush
 Servbot,King Servbot
-Sonson,Fuusetsu Zan
-Sonson,Shienbu
-Sonson,Seiten Rengeki
-Sonson,Kinginnokoro
-Sonson,Hofuku Zenshin
-Sonson,Wall Walk
-Sonson,Tenchi Tsukan
-Sonson,POW
-Sonson,Enou
-Strider Hiryu,Ame no murakumo
-Strider Hiryu,Excalibur
-Strider Hiryu,Gram
-Strider Hiryu,Vajra
-Strider Hiryu,Wall Attachment
-Strider Hiryu,Formation A
-Strider Hiryu,Formation B
-Strider Hiryu,Formation C
-Strider Hiryu,Warp
-Strider Hiryu,Ouroboros
-Strider Hiryu,Ragnarok
-Strider Hiryu,Legion
-Tron,Beacon Bomb
-Tron,Servbot Launcher
-Tron,Bonne Strike
-Tron,Servbot Takeout
-Tron,Servbot Surprise
+SonSon,Fuusetsu Zan
+SonSon,Shienbu
+SonSon,Seiten Rengeki
+SonSon,Kinginnokoro
+SonSon,Hofuku Zenshin
+SonSon,Wall Walk
+SonSon,Tenchi Tsukan
+SonSon,POW
+SonSon,Enou
+Strider,Ame no murakumo
+Strider,Excalibur
+Strider,Gram
+Strider,Vajra
+Strider,Wall Attachment
+Strider,Formation A
+Strider,Formation B
+Strider,Formation C
+Strider,Warp
+Strider,Ouroboros
+Strider,Ragnarok
+Strider,Legion
+Tron Bonne,Beacon Bomb
+Tron Bonne,Servbot Launcher
+Tron Bonne,Bonne Strike
+Tron Bonne,Servbot Takeout
+Tron Bonne,Servbot Surprise
 Zangief,Spinning Piledriver
 Zangief,Double Lariat-Quick Double Lariat
 Zangief,Flying Powerbomb
@@ -391,3 +391,21 @@ Wolverine,Weapon X
 "Wolverine, Bone",Drill Claw
 "Wolverine, Bone",Berserker Barrage X
 "Wolverine, Bone",Weapon X
+Baby Bonnie Hood,Smile & Missile
+Baby Bonnie Hood,Happy & Missile
+Baby Bonnie Hood,Shy Strike
+Baby Bonnie Hood,Cheer & Fire
+Baby Bonnie Hood,Cool Hunting
+Baby Bonnie Hood,Beautiful Memory
+Baby Bonnie Hood,Hyper Apple For You
+Jill,Charging S.T.A.R.S.
+Jill,Grenade Launcher
+Jill,Return Fire
+Jill,Zombie Escape
+Jill,Cerberus Escape
+Jill,Crow Escape
+Jill,Hyper Charging S.T.A.R.S.
+Jill,Rocket Launcher
+Jill,Tyrant Escape
+
+
