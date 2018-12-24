@@ -1,3 +1,23 @@
-<% @C.each do |data| %>
-    <%= link_to(image_tag(data.head_shot, alt: data.name, width: "100", length: "100"), character_path(data.name)) %> 
-<%end%>
+
+<%# react_component('HelloMessage', {name: 'John'}) %>
+
+<%# react_component('HelloMessage', {name: 'John'}) %>
+
+
+<%# @C.each do |data| %>
+    <%# link_to(image_tag(data.head_shot, alt: data.name, width: "100", length: "100"), character_path(data.name)) %> 
+<%#end%>
+<div>
+    
+    <div id="imageList" style="font-size: 0; margin: 0 auto; width: 487px; padding-top:50px;">
+    <% @C.each do |data, i| %>
+
+    <%= react_component('NameMapper',
+                    {name: data.head_shot, 
+                    moves: character_path(data.name),
+                    size: '50px'},
+                    {:style => "margin: 2px;  border: 4px solid #FFD700;
+                               display: inline-block;"})%>
+    <%end%>
+    </div>
+</div>
