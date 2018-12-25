@@ -31,7 +31,8 @@ csv_2.each do |row|
     m = Move.new
     m.character_name = row['name']
     m.move_name = row['move_name']
-    
+    m.image = "/images/Move_Images/#{row['name']}/#{m.move_name}.PNG"
+    puts m.image
 
     m.save
      puts "#{m.character_name} #{m.move_name} saved"

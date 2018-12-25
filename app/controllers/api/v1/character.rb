@@ -9,12 +9,22 @@ module API
           CharactersController::Character.all
         end
 
+        desc "Return all characters moves"
+          puts params 
+          params do
+            requires :name, type: String, desc: "Name of Character"
+          end
+          get "/:name/moves", root: "character" do
+            CharactersController::Character.find_by({name: permitted_params[:name]}).move
+          end
+      
+
         desc "Return a character"
         params do
           requires :name, type: String, desc: "Name of Character"
         end
         get ":name", root: "character" do
-          Character.where({name: permitted_params[:id]}).first!
+          CharactersController::Character.where({name: permitted_params[:name]}).first!
         end
       end
     end
