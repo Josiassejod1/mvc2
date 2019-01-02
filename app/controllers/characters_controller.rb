@@ -6,10 +6,11 @@ class CharactersController < ApplicationController
     end
     
     def show
-       @I = Character.where({name: params[:id]}).first
+        puts params
+       @I = Character.where("name like?", "%#{params[:id]}%").first
        #@moves = Move.where({character_name: 'Akuma'})
        #This method was used to account for white space when looking for a characters name
-       @moves = Move.where("character_name like ?", "%#{params[:id]}%")
+       @moves = @I.move
      # puts @moves
      
     end

@@ -3,13 +3,16 @@
 
 <%# react_component('HelloMessage', {name: 'John'}) %>
 
-
 <%# @C.each do |data| %>
     <%# link_to(image_tag(data.head_shot, alt: data.name, width: "100", length: "100"), character_path(data.name)) %> 
 <%#end%>
+<div class="img-responsive" style="background-image: url('images/maxresdefault.jpg')">
+<div class="text-center">
+        <h1 style="color:yellow">API Demo</h1>
+    </div>
 <div>
-    
-    <div id="imageList" style="font-size: 0; margin: 0 auto; width: 487px; padding-top:50px;">
+
+    <div class="container" id="imageList" style="font-size: 0; margin: 0 auto; width: 487px; padding-top:50px;">
     <% @C.each do |data, i| %>
 
     <%= react_component('NameMapper',
@@ -20,4 +23,5 @@
                                display: inline-block;"})%>
     <%end%>
     </div>
+</div>
 </div>
