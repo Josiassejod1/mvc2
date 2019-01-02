@@ -13,10 +13,13 @@ This returns a list of all available Characters for the Marvel and Capcom Univer
 ### Single Character End Point:
 https://secure-hamlet-19722.herokuapp.com/api/v1/characters/:name
 
+This returns a single record for a character
+Ex: https://secure-hamlet-19722.herokuapp.com/api/v1/characters/Akuma
 
 ### Character Move End Point:
 
 https://secure-hamlet-19722.herokuapp.com/api/v1/characters/:name/moves
 
 This returns a record of all moves for a specific character
+Ex: https://secure-hamlet-19722.herokuapp.com/api/v1/characters/Akuma/moves
 
