@@ -17,7 +17,7 @@ module API
           get "/:name/moves", root: "character" do
             puts params
            #ActiveRecord::Character.find_by("name like?", "%#{params[:name]}%")
-            CharactersController::Character.find_by("name like?", "%#{params[:name]}%")
+            CharactersController::Character.find_by("name like?", "%#{params[:name]}%").move
           end
       
 
