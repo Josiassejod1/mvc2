@@ -5,21 +5,14 @@ feature "Character page" do
     scenario "render characters from all Universes" do
         visit("/characters")
         expect(page).to have_css("#imageList")
+        expect(page).to have_content("API Demo")
     end
-    
-=begin
-    cant test specifically because I need jest
-    scenario "expect individual characters to be rendered" do
-        visit("/characters")
-        character = FactoryBot.create(:character)
-        expect(page).to have_css("a[href*='characters/#{character.name}']")
-    end
-=end
 
+    let(:move) {FactoryBot.create(:move)}
+    let(:move2) {FactoryBot.create(:move, move_name: "Ashura Senku")}
+    let(:character) {FactoryBot.create(:character, move: [move, move2])}
     scenario "expect individual characters to be rendered" do
-        characters = double("Character")
-        allow(characters).to receive(:move).and_return(character.move)
-        visit("/characters/Akuma") 
-        expect(page).to have_content(character.name)
+        visit("/characters/#{character.name}") 
+        expect(page).to have_content("Akuma")
     end
 end

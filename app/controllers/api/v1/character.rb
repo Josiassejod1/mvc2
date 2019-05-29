@@ -15,7 +15,9 @@ module API
             requires :name, type: String, desc: "Name of Character"
           end
           get "/:name/moves", root: "character" do
-            CharactersController::Character.find_by({name: permitted_params[:name]}).move
+            puts params
+           ActiveRecord::Character.find_by("name like?", "%#{params[:name]}%")
+           # MovesController::Move.find_by("name like?", "%#{params[:name]}%")
           end
       
 
@@ -24,7 +26,7 @@ module API
           requires :name, type: String, desc: "Name of Character"
         end
         get ":name", root: "character" do
-          CharactersController::Character.where({name: permitted_params[:name]}).first!
+          Character.where("name like?", "%#{params[:name]}%").first!
         end
       end
     end

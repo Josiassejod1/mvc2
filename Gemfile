@@ -15,6 +15,7 @@ gem 'rack-cors', :require => 'rack/cors'
 
 gem 'grape-active_model_serializers'
 
+gem 'shoulda-matchers', require: false
 
 gem 'grape-swagger' 
 gem 'grape-swagger-rails'
