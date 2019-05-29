@@ -26,7 +26,7 @@ module API
           requires :name, type: String, desc: "Name of Character"
         end
         get ":name", root: "character" do
-          Character.where("name like?", "%#{params[:name]}%").first!
+          CharactersController::Character.where("name like?", "%#{params[:name]}%")
         end
       end
     end
