@@ -16,8 +16,8 @@ module API
           end
           get "/:name/moves", root: "character" do
             puts params
-           ActiveRecord::Character.find_by("name like?", "%#{params[:name]}%")
-           # MovesController::Move.find_by("name like?", "%#{params[:name]}%")
+           #ActiveRecord::Character.find_by("name like?", "%#{params[:name]}%")
+            CharactersController::Character.find_by("name like?", "%#{params[:name]}%")
           end
       
 
