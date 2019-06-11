@@ -1,17 +1,29 @@
 class CharactersController < ApplicationController
+    before_action :authenticate_user!
     def index
-        @C = Character.order('name')
-        
-        
+        @characters = Character.all
+    end
+    
+    def new
+        @character = Character.new
     end
     
     def show
-        puts params
-       @I = Character.where("name like?", "%#{params[:id]}%").first
-       #@moves = Move.where({character_name: 'Akuma'})
-       #This method was used to account for white space when looking for a characters name
-       @moves = @I.move
-     # puts @moves
-     
+        @character = CharactersController::Character.where("name like?", "%#{@name}%")
+    end
+    
+    def create
+        @characters = Character.new(character_params)
+        puts @characters
+        if @characters.save
+            redirect_to  character_path, notice: "You created a Character."
+        else
+            @character = Character.new
+            render :new, alert:"Your character is not created."
+        end
+    end
+    
+    def character_params
+        params.require(:character).permit(:name, :head_shot, :universe)
     end
 end

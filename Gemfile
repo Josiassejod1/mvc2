@@ -16,9 +16,11 @@ gem 'rack-cors', :require => 'rack/cors'
 gem 'grape-active_model_serializers'
 
 gem 'shoulda-matchers', require: false
+gem 'simple_form'
 
 gem 'grape-swagger' 
 gem 'grape-swagger-rails'
+gem 'devise'
 # Use jquery as the JavaScript library
 gem 'grape'
 gem 'jquery-rails'
@@ -31,7 +33,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'capybara'
 gem 'factory_bot_rails'
 gem 'rspec-rails'
-
+gem 'rails_admin'
 
 
 # Use ActiveModel has_secure_password

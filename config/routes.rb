@@ -1,12 +1,24 @@
 Rails.application.routes.draw do
-  resources :characters, :only => [:index, :show]
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  devise_for :users
+  get 'home/index'
+
+ # resources :characters, :only => [:index, :show]
+  get "characters", to: "characters#index"
+  get "characters/new", to: "characters#new"
+  post "characters", to: "characters#create"
+  get "characters/:id", to: "characters#show", as: :characters_profile
+  
   mount API::Base, at: "/"
   mount GrapeSwaggerRails::Engine, at: "/documentation"
+  
+  root 'home#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'characters#index'
+  # root 'characters#index'
+  # resources :characters
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
