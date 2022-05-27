@@ -117,7 +117,7 @@ GEM
     nokogiri (1.8.0)
       mini_portile2 (~> 2.2.0)
     pg (0.21.0)
-    rack (1.6.8)
+    rack (1.6.13)
     rack-accept (0.4.5)
       rack (>= 0.4)
     rack-cors (1.0.2)
